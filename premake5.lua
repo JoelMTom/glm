@@ -10,8 +10,8 @@ project (projectName)
 	objdir ("%{wks.location}/bin-int/" .. Outputdir .. "/%{prj.name}")
 
   files {
-    "glm/**.h"
+    "**.h"
   }
 
-  IncludedirsDep[projectName] = os.getcwd() .. "/glm/"
+  IncludedirsDep[projectName] = os.getcwd()
   -- Linklib[projectName] = projectName
